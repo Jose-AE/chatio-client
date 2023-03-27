@@ -15,6 +15,14 @@ import Login from "../components/Login";
 import Signup from "../components/Signup";
 
 function Homepage() {
+  useEffect(() => {
+    //check if user is logged in
+    const token = localStorage.getItem("token");
+    if (token) {
+      window.location.href = "/";
+    }
+  }, []);
+
   return (
     <Container maxW="xl" centerContent>
       <Box

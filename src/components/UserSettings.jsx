@@ -145,7 +145,7 @@ export default function UserSettings({ isOpen, onClose, logggedUser }) {
                 w="100%"
                 onClick={() => {
                   localStorage.setItem("token", "");
-                  window.location.href = "/";
+                  window.location.href = "/login";
                 }}
               >
                 Logout

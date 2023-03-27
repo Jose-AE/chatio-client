@@ -33,7 +33,7 @@ export default function Login() {
       .then((res) => {
         localStorage.setItem("token", res.data.token);
         setLoading(false);
-        navigate("/chats");
+        window.location.href = "/";
       }) //
       .catch((err) => {
         //console.log(err);

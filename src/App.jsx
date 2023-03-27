@@ -9,8 +9,8 @@ import { Route, Routes, Link } from "react-router-dom";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/chats" element={<Chatpage />} />
+      <Route path="/" element={<Chatpage />} />
+      <Route path="/login" element={<Homepage />} />
     </Routes>
   );
 }
